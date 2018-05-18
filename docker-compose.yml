@@ -1,0 +1,31 @@
+version: '3'
+services:
+  mongo:
+    restart: always
+    image: "mongo:3.4.9-jessie"
+    ports:
+        - "27017:27017"
+
+  mailer:
+    restart: always  
+    container_name: mailer-service
+    image: vladpantea/service-mailer:v1.0
+    ports:
+      - "3001:3001"
+
+  server:
+    restart: always
+    container_name: server
+    image: alinluncan/docker-server-demo
+    ports:
+      - "6060:6060"
+    environment:
+      MONGO_URL: 'mongodb://mongo/dockerDemo'
+      MAILER_URL: 'http://mailer-service:3001/'
+
+  client:
+    restart: always
+    container_name: client
+    image: alinluncan/docker-client-demo:v1
+    ports:
+      - "3000:3000"
