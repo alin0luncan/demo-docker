@@ -1,0 +1,29 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "bcrypt-nodejs": "0.0.3",
+    "body-parser": "^1.17.2",
+    "cors": "^2.8.3",
+    "cross-env": "^5.1.5",
+    "dotenv": "^5.0.1",
+    "express": "^4.15.3",
+    "jwt-simple": "^0.5.1",
+    "mongoose": "^4.10.6",
+    "morgan": "^1.8.2",
+    "nodemon": "^1.17.4",
+    "passport": "^0.3.2",
+    "passport-jwt": "^2.2.1",
+    "passport-local": "^1.0.0",
+    "path": "^0.12.7",
+    "request": "^2.86.0"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\public",
+    "\\src",
+    "\\src\\actions",
+    "\\src\\components",
+    "\\src\\components\\auth",
+    "\\src\\reducers"
+  ],
+  "SelectedNode": "\\src\\components\\auth\\require_auth.js",
+  "PreviewInSolutionExplorer": false
+}
